@@ -1,4 +1,4 @@
-public class c5e8 {
+public class quiz {
     public static void main(String[] args) {
         
     }
