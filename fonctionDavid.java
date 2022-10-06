@@ -5,7 +5,9 @@ public class fonctionDavid {
         String[] _tableau = new String [_TableauDeBase.length + 3];
 
         for (int i = 0; i < _taille; i++) {
+
             _tableau[i] = "sans nom";
+            
         }
 
         return _tableau;

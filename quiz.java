@@ -7,7 +7,7 @@ public class quiz {
 
         String[] nomJoueurs = {};
 
-        boolean partieEnCour = false;
+        //boolean partieEnCour = false;
 
 
 
@@ -16,16 +16,18 @@ public class quiz {
 
         System.out.println("combien de joueur êtes-vous?");
 
-        nomJoueurs = fonctionDavid.creerTableauString(nomJoueurs, 3);
-
-        System.out.println(nomJoueurs.length);
-
         // fonction qui demande un nombre
+        nombreJoueurs = fonctionBruno.NombreJoueur();
 
-        if (nombreJoueurs > 1) {
-            // lance le mode solo
-        } else {
-            // lance le mode multi
+        nomJoueurs = fonctionDavid.creerTableauString(nomJoueurs, nombreJoueurs);
+
+        for (int i = 0; i < nomJoueurs.length; i++) {
+            // fonction qui permet d'enregistrer un nom
+        }
+
+        // debug pour consulter la liste des joueurs
+        for (int i = 0; i < nomJoueurs.length; i++) {
+            System.out.println(nomJoueurs[i]);
         }
 
         System.out.println("Entrez votre nom");
