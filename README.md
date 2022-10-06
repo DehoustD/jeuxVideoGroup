@@ -21,7 +21,7 @@ partieEnCour = false // sert a faire boucler la partie
 
 1- Print d'un message de bienvenue
 2- Ask nombre de joueurs
-    2-1- 1 joueur
+    2-1- un joueur
         2-1-1- Entrer nom du joueur
         2-1-2- Lancement de la partie
     2-2- plusieurs joueurs
@@ -45,3 +45,8 @@ partieEnCour = false // sert a faire boucler la partie
 4- Le joueur donne une réponse
 5- feedback (bonne ou mauvaise réponse)
 6- gestion du compteur de points
+
+## Les différentes fonctions
+
+- une fonction qui demande un int (minimum, maximum)
+- une fonction qui demande un String
