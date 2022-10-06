@@ -7,4 +7,6 @@ Sommaire du jeu :
 
 1. print d'un message de bienvenue
 2. ask nombre de joueurs
+* Une sous-puce
+* Une autre sous-puce
 3. print l'ordinateur a choisi le thème (variable) x 
