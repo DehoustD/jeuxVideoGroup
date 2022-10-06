@@ -1,9 +1,9 @@
-public class quiz {
+public class Quiz {
     public static void main(String[] args) {
 
         // Les variables
 
-        int nombreJoueurs = 3;
+        int nombreJoueurs = 0;
 
         String[] nomJoueurs = {};
 
