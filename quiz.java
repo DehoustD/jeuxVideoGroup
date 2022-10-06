@@ -17,6 +17,7 @@ public class Quiz {
         System.out.println("combien de joueur êtes-vous?");
 
         // fonction qui demande un nombre
+        
         nombreJoueurs = fonctionBruno.NombreJoueur();
 
         nomJoueurs = fonctionDavid.creerTableauString(nomJoueurs, nombreJoueurs);
@@ -25,11 +26,16 @@ public class Quiz {
             // fonction qui permet d'enregistrer un nom
         }
 
-        // debug pour consulter la liste des joueurs
-        for (int i = 0; i < nomJoueurs.length; i++) {
-            System.out.println(nomJoueurs[i]);
-        }
+        //debug pour consulter la liste des joueurs
 
-        System.out.println("Entrez votre nom");
+        // for (int i = 0; i < nomJoueurs.length; i++) {
+
+        //     System.out.println(nomJoueurs[i]);
+
+        // }
+
+        // ^ a revoir from scratch
+
+
     }
 }
