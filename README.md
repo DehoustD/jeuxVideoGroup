@@ -6,12 +6,12 @@ Prototype de quiz inspiré de l'émission "tout le monde veux prendre sa place".
 ## Variable du jeu :
 
 ### String
-Nom des joueurs = String[]
+Nom des joueurs = String[]  
 Nom des thèmes = String[]
 
 ### int
-Nombre de joueurs max = int (4)
-Scores = int[]
+Nombre de joueurs max = int (4)  
+Scores = int[]  
 Nombre de tour = int (3)
 
 ### boolean
