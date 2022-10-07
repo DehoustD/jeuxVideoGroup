@@ -34,8 +34,8 @@ partieEnCour = false // sert a faire boucler la partie
 1- Le ou les joueurs se voient poser une question, pendant x tours  
 2- fin de partie, on présente les résultats et donc le vainqueur  
 3- menu de fin  
-&nbsp;&nbsp;a. recommencer
-&nbsp;&nbsp;b. quitter
+&nbsp;&nbsp;a. recommencer  
+&nbsp;&nbsp;b. quitter  
 
 ## déroulé d'un tour d'un joueur
 
