@@ -21,8 +21,8 @@ partieEnCour = false // sert a faire boucler la partie
 
 1- Print d'un message de bienvenue  
 2- Ask nombre de joueurs  
->    2-1- un joueur  
->>        2-1-1- Entrer nom du joueur  
+&nbsp;&nbsp;    2-1- un joueur  
+        2-1-1- Entrer nom du joueur  
         2-1-2- Lancement de la partie  
     2-2- plusieurs joueurs  
         2-2-1- Entrer nom des joueurs  
