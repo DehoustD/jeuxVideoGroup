@@ -31,22 +31,22 @@ partieEnCour = false // sert a faire boucler la partie
 
 ## déroulé d'une partie
 
-1- Le ou les joueurs se voient poser une question, pendant x tours
-2- fin de partie, on présente les résultats et donc le vainqueur
-3- menu de fin
-    a. recommencer
-    b. quitter
+1- Le ou les joueurs se voient poser une question, pendant x tours  
+2- fin de partie, on présente les résultats et donc le vainqueur  
+3- menu de fin  
+&nbsp;&nbsp;a. recommencer
+&nbsp;&nbsp;b. quitter
 
 ## déroulé d'un tour d'un joueur
 
-1- PRINT l'ordinateur choisi un thème aléatoirement
-2- ASK En fonction du thème, l'ordinateur demande de choisir la difficulté (duo, carré, cash)
-3- PRINT question
-4- Le joueur donne une réponse
-5- feedback (bonne ou mauvaise réponse)
-6- gestion du compteur de points
+1- PRINT l'ordinateur choisi un thème aléatoirement  
+2- ASK En fonction du thème, l'ordinateur demande de choisir la difficulté (duo, carré, cash)  
+3- PRINT question  
+4- Le joueur donne une réponse  
+5- feedback (bonne ou mauvaise réponse)  
+6- gestion du compteur de points  
 
 ## Les différentes fonctions
 
-- une fonction qui demande un int (minimum, maximum)
+- une fonction qui demande un int (minimum, maximum)  
 - une fonction qui demande un String
