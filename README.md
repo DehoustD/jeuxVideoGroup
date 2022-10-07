@@ -15,13 +15,13 @@ Scores = int[]
 Nombre de tour = int (3)
 
 ### boolean
-partieEnCour = false // sert a faire boucler la partie
+partieEnCour = false // sert a faire boucler la partie 
 
 ## Déroulé du jeu :
 
-1- Print d'un message de bienvenue
-2- Ask nombre de joueurs
-    2-1- un joueur
+1- Print d'un message de bienvenue 
+2- Ask nombre de joueurs 
+    2-1- un joueur 
         2-1-1- Entrer nom du joueur
         2-1-2- Lancement de la partie
     2-2- plusieurs joueurs
