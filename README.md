@@ -21,13 +21,13 @@ partieEnCour = false // sert a faire boucler la partie
 
 1- Print d'un message de bienvenue  
 2- Ask nombre de joueurs  
-&nbsp;&nbsp;    2-1- un joueur  
-        2-1-1- Entrer nom du joueur  
-        2-1-2- Lancement de la partie  
-    2-2- plusieurs joueurs  
-        2-2-1- Entrer nom des joueurs  
-        2-2-2- Définition de l'ordre des joueurs  
-        2-2-3- Lancement de la partie  
+&nbsp;&nbsp;2-1- un joueur  
+&nbsp;&nbsp;&nbsp;&nbsp;2-1-1- Entrer nom du joueur  
+&nbsp;&nbsp;&nbsp;&nbsp;2-1-2- Lancement de la partie  
+&nbsp;&nbsp;2-2- plusieurs joueurs  
+&nbsp;&nbsp;&nbsp;&nbsp;2-2-1- Entrer nom des joueurs  
+&nbsp;&nbsp;&nbsp;&nbsp;2-2-2- Définition de l'ordre des joueurs  
+&nbsp;&nbsp;&nbsp;&nbsp;2-2-3- Lancement de la partie  
 
 ## déroulé d'une partie
 
