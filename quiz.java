@@ -1,3 +1,5 @@
+import help.CommonUserInput;
+
 public class Quiz {
     public static void main(String[] args) {
 
@@ -54,7 +56,11 @@ public class Quiz {
 
         System.out.println("La partie est terminée");
 
-        System.out.println("voulez-vous rejouer ?");
+        if (CommonUserInput.AskYesOrNo("voulez-vous rejouer ?")) {
+            System.out.println("DEBUG : on rejoue");
+        } else {
+            System.out.println("DEBUG : on quite le jeu");
+        }
 
     }
 
