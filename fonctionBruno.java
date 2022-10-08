@@ -42,7 +42,7 @@ do {
 
 while (_number < 1 || _number > 4);
 
-//userInput.nextLine();
+userInput.nextLine();
 
 
 	return _number;
