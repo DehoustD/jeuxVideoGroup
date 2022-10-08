@@ -47,6 +47,7 @@ public class Quiz {
             }
 
             mancheActuelle++;
+
             System.out.println("manche numéro " + mancheActuelle + " terminée.");
 
         }
