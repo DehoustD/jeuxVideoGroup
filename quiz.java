@@ -20,7 +20,7 @@ public class Quiz {
         
         nombreJoueurs = fonctionBruno.NombreJoueur();
 
-        nomJoueurs = fonctionDavid.creerTableauString(nomJoueurs, nombreJoueurs);
+        nomJoueurs = fonctionDavid.CreerTableauString(nomJoueurs, nombreJoueurs);
 
         for (int i = 0; i < nomJoueurs.length; i++) {
             // fonction qui permet d'enregistrer un nom
