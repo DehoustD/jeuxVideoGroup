@@ -28,14 +28,12 @@ public class Quiz {
 
         //debug pour consulter la liste des joueurs
 
-        // for (int i = 0; i < nomJoueurs.length; i++) {
+        for (int i = 0; i < nomJoueurs.length; i++) {
 
-        //     System.out.println(nomJoueurs[i]);
+            System.out.println(nomJoueurs[i]);
 
-        // }
-
-        // ^ a revoir from scratch
-
+        }
 
     }
+
 }
