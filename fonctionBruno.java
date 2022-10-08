@@ -48,5 +48,8 @@ userInput.nextLine();
 	return _number;
 }
 
-//public static void Choice
+public static void ChoiceThematic () {
+
+	
+}
 }
