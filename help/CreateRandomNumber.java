@@ -1,3 +1,5 @@
+package help;
+
 public class CreateRandomNumber {
     public static void main(String[] args) {
 
