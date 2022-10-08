@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 public class fonctionBruno {
 
-	public static Scanner userInput = new Scanner(System.in);
+	private static Scanner userInput = new Scanner(System.in);
 
 	public static String UserName() {
 
@@ -42,7 +42,11 @@ do {
 
 while (_number < 1 || _number > 4);
 
+//userInput.nextLine();
+
 
 	return _number;
 }
+
+//public static void Choice
 }
