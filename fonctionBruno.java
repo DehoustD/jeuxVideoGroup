@@ -48,11 +48,6 @@ userInput.nextLine();
 	return _number;
 }
 
-public static void ChoiceThematic () {
-
-	
-}
-
 
 public static int GenererNbrAleatoire(int _max) {
 
@@ -61,7 +56,7 @@ public static int GenererNbrAleatoire(int _max) {
 		return _nbrAleatoire;
 	}
 
-	public static String ResultSwitch () {
+	public static String ChoiceThematic () {
 
 		int thematicRandom = GenererNbrAleatoire(2);
 
