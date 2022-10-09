@@ -52,4 +52,37 @@ public static void ChoiceThematic () {
 
 	
 }
+
+
+public static int GenererNbrAleatoire(int _max) {
+
+		int _nbrAleatoire = (int) (Math.random () * (_max + 1));
+
+		return _nbrAleatoire;
+	}
+
+	public static String ResultSwitch () {
+
+		int thematicRandom = GenererNbrAleatoire(2);
+
+		switch (thematicRandom) {
+			case 0:
+
+			System.out.println("sciences");
+				return "sciences";
+
+				case 1:
+
+			System.out.println("culture générale");
+				return "culture général";
+
+				case 2:
+
+			System.out.println("géographie");
+				return "géographie";
+		
+			default:
+				return "ERREUR";
+		}
+	}
 }
