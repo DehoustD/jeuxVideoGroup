@@ -1,71 +1,58 @@
 import help.CommonUserInput;
 
 public class Quiz {
+
     public static void main(String[] args) {
 
         // Les variables
 
-        int nombreJoueurs = 0;
+        // note de David, il faut créer une fonction pour réinitialisé les variables en cas de nouvelle partie. Au moins les scores.
+
+        int nombreDeJoueurs = 0;
 
         int nombreDeManche = 3;
-
-        int mancheActuelle = 0;
 
         int[] scores = {};
 
         String[] nomJoueurs = {};
 
-        //boolean partieEnCour = false;
+        // Accueil du jeu.
 
-        System.out.println("Bienvenu dans notre quiz");
+        System.out.println("\nBienvenu dans notre quiz !");
 
-        System.out.println("Combien de joueur êtes-vous?");
+        //On enregistre le ou les joueurs, puis on leurs attribue un score de zéro.
 
-        nombreJoueurs = fonctionBruno.NombreJoueur();
+        nombreDeJoueurs = fonctionBruno.NombreJoueur();
 
-        nomJoueurs = fonctionDavid.CreerTableauString(nomJoueurs, nombreJoueurs);
+        nomJoueurs = fonctionDavid.CreerTableauString(nomJoueurs, nombreDeJoueurs);
 
-        scores = fonctionDavid.CreerTableauInt(scores, nombreJoueurs);
+        scores = fonctionDavid.CreerTableauInt(scores, nombreDeJoueurs);
 
         for (int i = 0; i < nomJoueurs.length; i++) {
 
             nomJoueurs[i] = fonctionBruno.UserName();
 
-            System.out.println("nom du joueur = " + nomJoueurs[i] + " avec un score de " + scores[i] + ".");
+            System.out.println("Le nom du joueur = " + nomJoueurs[i] + " avec un score de " + scores[i] + ".");
 
         }
 
-        while (mancheActuelle < nombreDeManche) {
+        System.out.println("\n");
 
-            for (int i = 0; i < nombreJoueurs; i++) {
+        // fin de l'enregistrement.
 
-                System.out.println("le joueur " + nomJoueurs[i] + " joue.");
+        do {
 
-                //Temp.DuoCarreCash(Temp.IAchoisiTheme());
+            // On lance la partie !
 
-                // fonction de Bruno
+            fonctionDavid.UnePartie(nombreDeManche, nombreDeJoueurs, nomJoueurs, scores);
 
-                Temp.DuoCarreCash(fonctionBruno.ChoiceThematic());
+            // On demande si le ou les joueurs veulent rejouer.
 
-            }
+        } while (CommonUserInput.AskYesOrNo("voulez-vous rejouer ?"));
 
-            mancheActuelle++;
+        // Message de salutation de fin.
 
-            System.out.println("manche numéro " + mancheActuelle + " terminée.");
-
-        }
-
-        System.out.println("La partie est terminée");
-
-        if (CommonUserInput.AskYesOrNo("voulez-vous rejouer ?")) {
-
-            System.out.println("DEBUG : on rejoue");
-
-        } else {
-
-            System.out.println("DEBUG : on quite le jeu");
-
-        }
+        System.out.println("\nMerci d'avoir joué, bonne journée à vous.");
 
     }
 

@@ -24,9 +24,11 @@ public class Temp {
 
     }
 
-    public static String DuoCarreCash(String _theme) {
+    public static int DuoCarreCash(String _theme) {
 
         String _responce = "";
+
+        // je demande à l'utilisateur si il veut un duo, un carré ou un cash, et je boucle sur la question jusqu'à ce qu'il me donne une réponse valable.
 
         do {
 
@@ -36,35 +38,35 @@ public class Temp {
 
         } while ( ! ( _responce.equals("1") || _responce.equals("2") || _responce.equals("3") ) );
 
+        // en fonction de la réponse de l'utilisateur, je retourne 1 pour duo, 2 pour carré, 3 pour cash
+
             switch (_responce) {
 
                 case "1":
 
                     System.out.println("vous avez choisis duo.");
 
-                return "1";
+                return 1;
 
                 case "2":
 
                     System.out.println("vous avez choisis carré.");
 
-                return "2";
+                return 2;
 
                 case "3":
 
                     System.out.println("vous avez choisis cash.");
 
-                return "3";
+                return 3;
 
                 default:
 
                     System.err.println("Erreur Dev, problème de switch");
 
-                return "0";
+                return 0;
 
             }
-
-        
 
     }
 

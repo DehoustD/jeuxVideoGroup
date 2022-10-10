@@ -66,4 +66,14 @@ public class CommonUserInput {
 
     }
 
+    public static String AskString(String _Question) {
+
+        System.out.print("\n" + _Question + "\nVotre Réponse : ");
+
+        String _Responce = input.nextLine();
+
+        return _Responce;
+
+    }
+
 }
