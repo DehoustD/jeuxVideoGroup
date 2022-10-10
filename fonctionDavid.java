@@ -1,6 +1,7 @@
 public class fonctionDavid {
 
     // fonction qui ajuste la taille d'un tableau de String a partir d'un tableau vide.
+
     public static String[] CreerTableauString(String[] _TableauDeBase, int _taille) {
 
         String[] _tableau = new String[_TableauDeBase.length + _taille];
@@ -12,9 +13,11 @@ public class fonctionDavid {
         }
 
         return _tableau;
+
     }
 
     // fonction qui ajuste la taille d'un tableau de String a partir d'un tableau vide.
+
     public static int[] CreerTableauInt(int[] _TableauDeBase, int _taille) {
 
         int[] _tableau = new int[_TableauDeBase.length + _taille];
@@ -26,5 +29,33 @@ public class fonctionDavid {
         }
 
         return _tableau;
+
     }
+
+    public static void Question( String _question, String[]_reponse, int _duoCarreCash){
+
+        System.out.println(_question);
+
+        switch (_duoCarreCash) {
+
+            case 1:
+
+            break;
+
+            case 2:
+
+            break;
+
+            case 3:
+
+            break;
+
+            default:
+
+            break;
+
+        }
+
+    }
+
 }

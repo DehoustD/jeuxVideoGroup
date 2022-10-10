@@ -19,11 +19,12 @@ public class Quiz {
 
         System.out.println("Bienvenu dans notre quiz");
 
-        System.out.println("combien de joueur êtes-vous?");
+        System.out.println("Combien de joueur êtes-vous?");
 
         nombreJoueurs = fonctionBruno.NombreJoueur();
 
         nomJoueurs = fonctionDavid.CreerTableauString(nomJoueurs, nombreJoueurs);
+
         scores = fonctionDavid.CreerTableauInt(scores, nombreJoueurs);
 
         for (int i = 0; i < nomJoueurs.length; i++) {
@@ -34,18 +35,18 @@ public class Quiz {
 
         }
 
-        // debug pour consulter la liste des joueurs
-
-        for (int i = 0; i < nomJoueurs.length; i++) {
-
-            System.out.println("Debug : nom du joueur " + (i + 1) + " : " + nomJoueurs[i] + ".");
-
-        }
-
         while (mancheActuelle < nombreDeManche) {
 
             for (int i = 0; i < nombreJoueurs; i++) {
+
                 System.out.println("le joueur " + nomJoueurs[i] + " joue.");
+
+                //Temp.DuoCarreCash(Temp.IAchoisiTheme());
+
+                // fonction de Bruno
+
+                Temp.DuoCarreCash(fonctionBruno.ChoiceThematic());
+
             }
 
             mancheActuelle++;
@@ -57,9 +58,13 @@ public class Quiz {
         System.out.println("La partie est terminée");
 
         if (CommonUserInput.AskYesOrNo("voulez-vous rejouer ?")) {
+
             System.out.println("DEBUG : on rejoue");
+
         } else {
+
             System.out.println("DEBUG : on quite le jeu");
+
         }
 
     }
