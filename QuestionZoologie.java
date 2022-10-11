@@ -2,13 +2,13 @@ public class QuestionZoologie {
 
     public static String[] PasseQuestionZoologie() {
 
-        String zooQ1 = "Combien de pattes ont les chiens ?";
+        String zooQuestion1 = "Combien de pattes ont les chiens ?";
 
-        String zooQ2 = "Combien d'oreilles ont les humains ?";
+        String zooQuestion2 = "Combien d'oreilles ont les humains ?";
 
-        String zooQ3 = "Comment s'apelle l'animal domestique qui ronronne ?";
+        String zooQuestion3 = "Comment s'apelle l'animal domestique qui ronronne ?";
 
-        String[] tableauQuestionZoologie = { zooQ1, zooQ2, zooQ3 };
+        String[] tableauQuestionZoologie = { zooQuestion1, zooQuestion2, zooQuestion3 };
 
         return tableauQuestionZoologie;
 
@@ -16,23 +16,23 @@ public class QuestionZoologie {
 
     public static String[][] PasseChoixZoologie() {
 
-        String[] zooC1 = { "1", "2", "3", "4" };
+        String[] zooChoix1 = { "1", "2", "3", "4" };
 
-        String[] zooC2 = { "1", "2", "3", "4" };
+        String[] zooChoix2 = { "1", "2", "3", "4" };
 
-        String[] zooC3 = { "chien", "chat", "lapin", "hamster"};
+        String[] zooChoix3 = { "chien", "chat", "lapin", "hamster"};
 
-        String[][] tableauReponseZoologie = { zooC1, zooC2, zooC3 };
+        String[][] tableauChoixZoologie = { zooChoix1, zooChoix2, zooChoix3 };
 
-        return tableauReponseZoologie;
+        return tableauChoixZoologie;
 
     }
 
     public static String[] PasseReponseZoologie(){
 
-        String[] zooR1 = {"4", "2", "chat" };
+        String[] zooReponse1 = {"4", "2", "chat" };
 
-        return zooR1;
+        return zooReponse1;
 
     }
 

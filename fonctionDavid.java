@@ -18,7 +18,7 @@ public class fonctionDavid {
 
     }
 
-    // fonction qui ajuste la taille d'un tableau de String a partir d'un tableau vide.
+    // fonction qui ajuste la taille d'un tableau de int a partir d'un tableau vide.
 
     public static int[] CreerTableauInt(int[] _TableauDeBase, int _taille) {
 
