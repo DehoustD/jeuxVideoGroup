@@ -1,5 +1,3 @@
-import help.CommonUserInput;
-
 public class Quiz {
 
     public static void main(String[] args) {
@@ -52,7 +50,7 @@ public class Quiz {
 
             // On demande si le ou les joueurs veulent rejouer.
 
-        } while (CommonUserInput.AskYesOrNo("voulez-vous rejouer ?"));
+        } while (fonctionBruno.QuestionBoleen("voulez-vous rejouer ?"));
 
         // Message de salutation de fin.
 

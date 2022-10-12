@@ -1,5 +1,6 @@
-import help.CommonUserInput;
-
+/**
+ * fonction diverse, inclus entre autre, les fonctions liées aux jeu en lui même.
+ */
 public class fonctionDavid {
 
     // fonction qui ajuste la taille d'un tableau de String a partir d'un tableau vide.
@@ -62,7 +63,7 @@ public class fonctionDavid {
 
                 String _theme = fonctionBruno.ChoiceThematic();
 
-                int _duoCarreCash = Temp.DuoCarreCash(_theme);
+                int _duoCarreCash = fonctionBruno.DuoCarreCash(_theme);
 
                 String[] _questionTableau = RecuperationTableauQuestion(_theme);
 
@@ -106,13 +107,13 @@ public class fonctionDavid {
 
         switch (_theme) {
 
-            case "sciences":
+            case "zoologie":
 
                 return QuestionZoologie.PasseQuestionZoologie();
 
-            case "culture général":
+            case "sport":
     
-                return QuestionZoologie.PasseQuestionZoologie();
+                return QuestionSport.PasseQuestionSport();
 
             case "géographie":
 
@@ -134,13 +135,13 @@ public class fonctionDavid {
 
         switch (_theme) {
 
-            case "sciences":
+            case "zoologie":
 
                 return QuestionZoologie.PasseChoixZoologie();
 
-            case "culture général":
+            case "sport":
 
-                return QuestionZoologie.PasseChoixZoologie();
+                return QuestionSport.PasseChoixSport();
 
             case "géographie":
 
@@ -162,13 +163,13 @@ public class fonctionDavid {
 
         switch (_theme) {
 
-            case "sciences":
+            case "zoologie":
 
                 return QuestionZoologie.PasseReponseZoologie();
 
-            case "culture général":
+            case "sport":
 
-                return QuestionZoologie.PasseReponseZoologie();
+                return QuestionSport.PasseReponseSport();
 
             case "géographie":
 
@@ -230,7 +231,7 @@ public class fonctionDavid {
 
         }
 
-        String utilisateurReponse = CommonUserInput.AskString("Veuillez inscrire la bonne réponse.");
+        String utilisateurReponse = fonctionBruno.AskString("Veuillez inscrire la bonne réponse.");
 
         if (utilisateurReponse.equals(_reponse)) {
 
@@ -271,33 +272,5 @@ public class fonctionDavid {
         }
 
     }
-
-    // fonction qui permet à l'ordinateur de choisir un thème aléatoire (Obsolète, voir fichier fonctionBruno).
-
-    // public static void IAchoisisQuestion (String _theme){
-
-    //     switch (_theme) {
-
-    //         case "science":
-
-    //             break;
-
-    //         case "culture général":
-
-    //             break;
-
-    //         case "géographie":
-
-    //             break;
-
-    //         default: 
-
-    //             System.out.println("ERREUR");
-
-    //             break;
-
-    //     }
-
-    // }
 
 }

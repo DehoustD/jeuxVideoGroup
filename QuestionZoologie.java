@@ -8,7 +8,9 @@ public class QuestionZoologie {
 
         String zooQuestion3 = "Comment s'apelle l'animal domestique qui ronronne ?";
 
-        String[] tableauQuestionZoologie = { zooQuestion1, zooQuestion2, zooQuestion3 };
+        String zooQuestion4 = "Comment s'apelle l'animal domestique qui ronronne ?";
+
+        String[] tableauQuestionZoologie = { zooQuestion1, zooQuestion2, zooQuestion3, zooQuestion4 };
 
         return tableauQuestionZoologie;
 
@@ -22,7 +24,9 @@ public class QuestionZoologie {
 
         String[] zooChoix3 = { "chien", "chat", "lapin", "hamster"};
 
-        String[][] tableauChoixZoologie = { zooChoix1, zooChoix2, zooChoix3 };
+        String[] zooChoix4 = { "chien", "chat", "lapin", "hamster"};
+
+        String[][] tableauChoixZoologie = { zooChoix1, zooChoix2, zooChoix3, zooChoix4 };
 
         return tableauChoixZoologie;
 
@@ -30,9 +34,9 @@ public class QuestionZoologie {
 
     public static String[] PasseReponseZoologie(){
 
-        String[] zooReponse1 = {"4", "2", "chat" };
+        String[] zooReponseCorrect = {"4", "2", "chat", "chat" };
 
-        return zooReponse1;
+        return zooReponseCorrect;
 
     }
 

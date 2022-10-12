@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * fonctionBruno
+ * FonctionBruno, inclus entre autre, toutes les fonctions utilisant un scanner.
  */
 public class fonctionBruno {
 
@@ -9,7 +9,7 @@ public class fonctionBruno {
 
 	public static String UserName() {
 
-		System.out.println(" entrer votre prénom");
+		System.out.println("entrer votre prénom");
 
 		String _firstName = userInput.nextLine();
 
@@ -18,32 +18,31 @@ public class fonctionBruno {
 
 public static int NombreJoueur() {
 
-	System.out.println(" combien y aura-t-il de joueurs ? Minimum 1 joueur et maximum 4");
+	System.out.println("combien y aura-t-il de joueurs ? Minimum 1 joueur et maximum 4");
 
 //	int _number = userInput.nextInt();
 
-int _number;
+	int _number;
 
-do {
-	
-	_number = userInput.nextInt();
+	do {
+		
+		_number = userInput.nextInt();
 
-	if (_number <1 ) {
+		if (_number <1 ) {
 
-		System.out.println("Vous devez jouer au moin à un joueur !!");
+			System.out.println("Vous devez jouer au moin à un joueur !!");
+		}
+
+		if (_number > 4) {
+
+			System.out.println("Le nombre de joueur maximum est de 4");
+		}
 	}
+	// fermeture do
 
-	if (_number > 4) {
+	while (_number < 1 || _number > 4);
 
-		System.out.println("Le nombre de joueur maximum est de 4");
-	}
-}
-// fermeture do
-
-while (_number < 1 || _number > 4);
-
-userInput.nextLine();
-
+	userInput.nextLine();
 
 	return _number;
 }
@@ -81,6 +80,52 @@ public static int GenererNbrAleatoire(int _max) {
 		}
 	}
 
+	public static int DuoCarreCash(String _theme) {
+
+        String _responce = "";
+
+        // je demande à l'utilisateur si il veut un duo, un carré ou un cash, et je boucle sur la question jusqu'à ce qu'il me donne une réponse valable.
+
+        do {
+
+            System.out.println("Tapez 1 pour duo, tapez 2 pour carré, tapez 3 pour cash");
+
+            _responce = userInput.nextLine();
+
+        } while ( ! ( _responce.equals("1") || _responce.equals("2") || _responce.equals("3") ) );
+
+        // en fonction de la réponse de l'utilisateur, je retourne 1 pour duo, 2 pour carré, 3 pour cash
+
+            switch (_responce) {
+
+                case "1":
+
+                    System.out.println("vous avez choisis duo.");
+
+                return 1;
+
+                case "2":
+
+                    System.out.println("vous avez choisis carré.");
+
+                return 2;
+
+                case "3":
+
+                    System.out.println("vous avez choisis cash.");
+
+                return 3;
+
+                default:
+
+                    System.err.println("Erreur Dev, problème de switch");
+
+                return 0;
+
+            }
+
+    }
+
 	public static boolean QuestionBoleen(String _question) {
 
 		String _reponse = "";
@@ -109,4 +154,14 @@ public static int GenererNbrAleatoire(int _max) {
 			}
 		}
 	}
+
+	public static String AskString(String _Question) {
+
+        System.out.print("\n" + _Question + "\nVotre Réponse : ");
+
+        String _Responce = userInput.nextLine();
+
+        return _Responce;
+
+    }
 }

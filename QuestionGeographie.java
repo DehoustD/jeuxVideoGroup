@@ -30,9 +30,9 @@ public class QuestionGeographie {
 
     public static String[] PasseReponseGeographie(){
 
-        String[] geoReponse1 = {"Everest", "Bruxelles", "Espagnol" };
+        String[] geoReponseCorrect = {"Everest", "Bruxelles", "Espagnol" };
 
-        return geoReponse1;
+        return geoReponseCorrect;
 
     }
 
