@@ -72,13 +72,13 @@ public class fonctionDavid {
 
                 int _idQuestion = fonctionBruno.GenererNbrAleatoire(_questionTableau.length-1);
 
-                boolean _bonneReponse = Question(_questionTableau[_idQuestion], _choixTableau[_idQuestion], _reponseTableau[_idQuestion], _duoCarreCash);
+                boolean _bonneReponse = fonctionDavid.Question(_questionTableau[_idQuestion], _choixTableau[_idQuestion], _reponseTableau[_idQuestion], _duoCarreCash);
 
                 if (_bonneReponse) {
 
-                    _scores[i] = _scores[i] + DefinirNombreDePoints(_duoCarreCash);
+                    _scores[i] = _scores[i] + fonctionDavid.DefinirNombreDePoints(_duoCarreCash);
 
-                    System.out.println("Bravo, vous avez " + DefinirNombreDePoints(_duoCarreCash) + " point(s) suplémentaire.");
+                    System.out.println("Bravo, vous avez " + fonctionDavid.DefinirNombreDePoints(_duoCarreCash) + " point(s) suplémentaire.");
 
                     System.out.println("Vous avez donc " + _scores[i] + " points.\n");
 
