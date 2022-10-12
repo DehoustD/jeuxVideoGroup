@@ -42,6 +42,10 @@ public class Quiz {
 
         do {
 
+            // On que tous les scores soit bien à zéro.
+
+            fonctionDavid.ScoreAZero(scores);
+
             // On lance la partie !
 
             fonctionDavid.UnePartie(nombreDeManche, nombreDeJoueurs, nomJoueurs, scores);

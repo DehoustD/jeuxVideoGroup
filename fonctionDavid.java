@@ -34,6 +34,20 @@ public class fonctionDavid {
 
     }
 
+        // fonction qui ramène toutes les valeurs du tableau scores à zéro.
+
+        public static int[] ScoreAZero (int[] _scores){
+
+            for (int i = 0; i < _scores.length; i++) {
+
+                _scores[i] = 0;
+
+            }
+
+            return _scores;
+
+        }
+
     // fonction qui gère l'intégralité d'une partie. Comprenant tous les tours des joueurs, et les différentes manches.
 
     public static void UnePartie(int _nombreDeManche, int _nombreDeJoueur, String[] _nomJoueur, int[] _scores){
@@ -44,17 +58,17 @@ public class fonctionDavid {
 
             for (int i = 0; i < _nombreDeJoueur; i++) {
 
-                System.out.println("le joueur " + _nomJoueur[i] + " joue.");
+                System.out.println(_nomJoueur[i] + " joue.");
 
                 String _theme = fonctionBruno.ChoiceThematic();
 
                 int _duoCarreCash = Temp.DuoCarreCash(_theme);
 
-                String[] _questionTableau = QuestionZoologie.PasseQuestionZoologie();
+                String[] _questionTableau = RecuperationTableauQuestion(_theme);
 
-                String[][] _choixTableau = QuestionZoologie.PasseChoixZoologie();
+                String[][] _choixTableau = RecuperationTableauChoix(_theme);
 
-                String[] _reponseTableau = QuestionZoologie.PasseReponseZoologie();
+                String[] _reponseTableau = RecuperationTableauReponse(_theme);
 
                 int _idQuestion = fonctionBruno.GenererNbrAleatoire(_questionTableau.length-1);
 
@@ -83,6 +97,90 @@ public class fonctionDavid {
         }
 
         System.out.println("La partie est terminée !\n");
+
+    }
+
+    // fonction qui va chercher un tableau de question en fonction du thème choisis par l'ordinateur.
+
+    public static String[] RecuperationTableauQuestion(String _theme){
+
+        switch (_theme) {
+
+            case "sciences":
+
+                return QuestionZoologie.PasseQuestionZoologie();
+
+            case "culture général":
+    
+                return QuestionZoologie.PasseQuestionZoologie();
+
+            case "géographie":
+
+                return QuestionGeographie.PasseQuestionGeographie();
+
+            default:
+
+                System.err.println("ERROR DEV : FonctionDavid > String RecuperationTableauQuestion > switch : la String semble mauvaise.");
+
+                return QuestionZoologie.PasseQuestionZoologie();
+
+        }
+
+    }
+
+    // fonction qui va chercher un tableau de choix en fonction du thème choisis par l'ordinateur.
+
+    public static String[][] RecuperationTableauChoix(String _theme){
+
+        switch (_theme) {
+
+            case "sciences":
+
+                return QuestionZoologie.PasseChoixZoologie();
+
+            case "culture général":
+
+                return QuestionZoologie.PasseChoixZoologie();
+
+            case "géographie":
+
+                return QuestionGeographie.PasseChoixGeographie();
+
+            default:
+
+                System.err.println("ERROR DEV : FonctionDavid > String RecuperationTableauChoix > switch : la String semble mauvaise.");
+
+                return QuestionZoologie.PasseChoixZoologie();
+
+        }
+
+    }
+
+    //
+
+    public static String[] RecuperationTableauReponse(String _theme){
+
+        switch (_theme) {
+
+            case "sciences":
+
+                return QuestionZoologie.PasseReponseZoologie();
+
+            case "culture général":
+
+                return QuestionZoologie.PasseReponseZoologie();
+
+            case "géographie":
+
+                return QuestionGeographie.PasseReponseGeographie();
+
+            default:
+
+                System.err.println("ERROR DEV : FonctionDavid > String RecuperationTableauReponse > switch : la String semble mauvaise.");
+
+                return QuestionZoologie.PasseReponseZoologie();
+
+        }
 
     }
 
@@ -126,7 +224,7 @@ public class fonctionDavid {
 
             default:
 
-                System.err.println("ERROR DEV : FonctionDavid > Void Question > switch : la réponse doit être 1, 2 ou 3");
+                System.err.println("ERROR DEV : FonctionDavid > Void Question > switch : la réponse doit être 1, 2 ou 3.");
 
                 break;
 
@@ -166,7 +264,7 @@ public class fonctionDavid {
 
             default:
 
-            System.err.println("ERROR DEV : FonctionDavid > int DefinirNombreDePoints > switch : la réponse doit être 1, 2 ou 3");
+            System.err.println("ERROR DEV : FonctionDavid > int DefinirNombreDePoints > switch : la réponse doit être 1, 2 ou 3.");
 
                 return 0;
 
@@ -176,30 +274,30 @@ public class fonctionDavid {
 
     // fonction qui permet à l'ordinateur de choisir un thème aléatoire (Obsolète, voir fichier fonctionBruno).
 
-    public static void IAchoisisQuestion (String _theme){
+    // public static void IAchoisisQuestion (String _theme){
 
-        switch (_theme) {
+    //     switch (_theme) {
 
-            case "science":
+    //         case "science":
 
-                break;
+    //             break;
 
-            case "culture général":
+    //         case "culture général":
 
-                break;
+    //             break;
 
-            case "géographie":
+    //         case "géographie":
 
-                break;
+    //             break;
 
-            default: 
+    //         default: 
 
-                System.out.println("ERREUR");
+    //             System.out.println("ERREUR");
 
-                break;
+    //             break;
 
-        }
+    //     }
 
-    }
+    // }
 
 }
