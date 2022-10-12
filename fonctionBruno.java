@@ -63,13 +63,13 @@ public static int GenererNbrAleatoire(int _max) {
 		switch (thematicRandom) {
 			case 0:
 
-			System.out.println("sciences");
-				return "sciences";
+			System.out.println("zoologie");
+				return "zoologie";
 
 				case 1:
 
-			System.out.println("culture générale");
-				return "culture général";
+			System.out.println("sport");
+				return "sport";
 
 				case 2:
 
@@ -78,6 +78,35 @@ public static int GenererNbrAleatoire(int _max) {
 		
 			default:
 				return "ERREUR";
+		}
+	}
+
+	public static boolean QuestionBoleen(String _question) {
+
+		String _reponse = "";
+
+		while (true) {
+
+			System.out.println(_question + "\nSi oui, tapez oui. Si non, tapez non");
+
+			_reponse = userInput.nextLine();
+
+			if (_reponse.toLowerCase() .equals("oui")) {
+
+				return true;
+			}
+
+			else if (_reponse.toLowerCase().equals("non")) {
+
+				return false;
+			}
+
+			else {
+
+				System.out.println("Vous devez impérativement marqué oui ou non, veuillez recommencer !");
+
+			//	continue;
+			}
 		}
 	}
 }
