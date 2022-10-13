@@ -119,6 +119,10 @@ public class fonctionDavid {
 
                 return QuestionGeographie.PasseQuestionGeographie();
 
+				case "sciences":
+
+                return QuestionSciences.PasseQuestionSciences();
+
             default:
 
                 System.err.println("ERROR DEV : FonctionDavid > String RecuperationTableauQuestion > switch : la String semble mauvaise.");
@@ -147,6 +151,10 @@ public class fonctionDavid {
 
                 return QuestionGeographie.PasseChoixGeographie();
 
+				case "sciences":
+
+                return QuestionSciences.PasseChoixSciences();
+
             default:
 
                 System.err.println("ERROR DEV : FonctionDavid > String RecuperationTableauChoix > switch : la String semble mauvaise.");
@@ -174,6 +182,10 @@ public class fonctionDavid {
             case "géographie":
 
                 return QuestionGeographie.PasseReponseGeographie();
+
+				case "sciences":
+
+                return QuestionSciences.PasseReponseSciences();
 
             default:
 
