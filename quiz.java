@@ -30,7 +30,7 @@ public class Quiz {
 
             nomJoueurs[i] = fonctionBruno.UserName();
 
-            System.out.println("Le nom du joueur = " + nomJoueurs[i] + " avec un score de " + scores[i] + ".");
+            System.out.println("Le nom du joueur est " + nomJoueurs[i] + " avec un score de " + scores[i] + ".");
 
         }
 
