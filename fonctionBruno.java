@@ -18,7 +18,7 @@ public class fonctionBruno {
 
 public static int NombreJoueur() {
 
-	System.out.println("combien y aura-t-il de joueurs ? Minimum 1 joueur et maximum 4");
+	System.out.println("Combien aura-t'il de joueurs ? Minimum 1 et maximum 4 joueurs !!");
 
 //	int _number = userInput.nextInt();
 
@@ -28,9 +28,9 @@ public static int NombreJoueur() {
 		
 		_number = userInput.nextInt();
 
-		if (_number <1 ) {
+		if (_number < 1 ) {
 
-			System.out.println("Vous devez jouer au moin à un joueur !!");
+			System.out.println("Vous devez jouer au moin à 1 joueur !!");
 		}
 
 		if (_number > 4) {
@@ -38,7 +38,6 @@ public static int NombreJoueur() {
 			System.out.println("Le nombre de joueur maximum est de 4");
 		}
 	}
-	// fermeture do
 
 	while (_number < 1 || _number > 4);
 
@@ -57,7 +56,7 @@ public static int GenererNbrAleatoire(int _max) {
 
 	public static String ChoiceThematic () {
 
-		int thematicRandom = GenererNbrAleatoire(2);
+		int thematicRandom = GenererNbrAleatoire(3);
 
 		switch (thematicRandom) {
 			case 0:
@@ -74,6 +73,11 @@ public static int GenererNbrAleatoire(int _max) {
 
 			System.out.println("géographie");
 				return "géographie";
+
+				case 3:
+
+			System.out.println("sciences");
+				return "sciences";
 		
 			default:
 				return "ERREUR";

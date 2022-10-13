@@ -220,7 +220,6 @@ public class fonctionDavid {
             case 3:
 
             // cash
-
                 break;
 
             default:
