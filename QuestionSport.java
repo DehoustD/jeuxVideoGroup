@@ -12,8 +12,8 @@ public class QuestionSport {
 
 	//	String sportQuestion4 = "Dans quelle écurie de F1 est Luis Hamilton en 2022";
 
-		String[] TableauQuestionSport = {sportQuestion1, sportQuestion2, sportQuestion3,};
+		String[] tableauQuestionSport = {sportQuestion1, sportQuestion2, sportQuestion3,};
 
-		return TableauQuestionSport;
+		return tableauQuestionSport;
 	}
 }
