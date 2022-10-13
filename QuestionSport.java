@@ -16,4 +16,22 @@ public class QuestionSport {
 
 		return tableauQuestionSport;
 	}
+
+	public static String[][] PasseChoixSport() {
+		String[] sportChoix1 = {"standard", "bruges", "anderlecht", "anvers"};
+
+		String[] sportChoix2 = {"1", "2", "3", "4"};
+
+		String[] sportChoix3 = {"6", "8", "10", "11"};
+
+		String[][] tableauChoixSport = {sportChoix1, sportChoix2, sportChoix3};
+
+		return tableauChoixSport;
+	}
+
+	public static String[] PasseReponseSport() {
+		String[] sportReponseCorrect = {"bruges", "2", "6"};
+
+		return sportReponseCorrect;
+	}
 }
