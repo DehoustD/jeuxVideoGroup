@@ -1,39 +1,19 @@
+/**
+ * QuestionSport
+ */
 public class QuestionSport {
 
-    public static String[] PasseQuestionSport() {
+	public static String[] PasseQuestionSport() {
+		String sportQuestion1 = "Qui a été champion de la Jupiler Pro LLigue saison 2021 - 2022 ?";
 
-        String sportQuestion1 = "la question 1 sur le thème du sport n'est pas disponible pour le moment, veuillez taper 1 en chiffre en guise de réponse.";
+		String sportQuestion2 = "Combien de fois Max Verstappen a été champion du monde de F1 ?";;
 
-        String sportQuestion2 = "la question 2 sur le thème du sport n'est pas disponible pour le moment, veuillez taper 1 en chiffre en guise de réponse.";
+		String sportQuestion3 = "Combien de joueurs est composée une équipe de rugby ?";
 
-        String sportQuestion3 = "la question 3 sur le thème du sport n'est pas disponible pour le moment, veuillez taper 1 en chiffre en guise de réponse.";
+		String sportQuestion4 = "Dans quelle écurie de F1 est Luis Hamilton en 2022";
 
-        String[] tableauQuestionSport = { sportQuestion1, sportQuestion2, sportQuestion3 };
+		String[] TableauQuestionSport = {sportQuestion1, sportQuestion2, sportQuestion3, sportQuestion4};
 
-        return tableauQuestionSport;
-
-    }
-
-    public static String[][] PasseChoixSport() {
-
-        String[] sportChoix1 = { "1", "un", "uno", "one" };
-
-        String[] sportChoix2 = { "1", "un", "uno", "one" };
-
-        String[] sportChoix3 = { "1", "un", "uno", "one" };
-
-        String[][] tableauChoixSport = { sportChoix1, sportChoix2, sportChoix3 };
-
-        return tableauChoixSport;
-
-    }
-
-    public static String[] PasseReponseSport(){
-
-        String[] sportReponseCorrect = {"1", "1", "1" };
-
-        return sportReponseCorrect;
-
-    }
-
+		return TableauQuestionSport;
+	}
 }
