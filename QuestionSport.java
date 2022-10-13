@@ -10,9 +10,9 @@ public class QuestionSport {
 
 		String sportQuestion3 = "Combien de joueurs est composée une équipe de rugby ?";
 
-		String sportQuestion4 = "Dans quelle écurie de F1 est Luis Hamilton en 2022";
+	//	String sportQuestion4 = "Dans quelle écurie de F1 est Luis Hamilton en 2022";
 
-		String[] TableauQuestionSport = {sportQuestion1, sportQuestion2, sportQuestion3, sportQuestion4};
+		String[] TableauQuestionSport = {sportQuestion1, sportQuestion2, sportQuestion3,};
 
 		return TableauQuestionSport;
 	}
