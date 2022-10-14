@@ -207,12 +207,30 @@ public class fonctionDavid {
 
             case 1:
 
-            System.out.println("Navré, actuellement, le duo fonctionne comme un carré pour cause de soucis d'algorithmique.");
+            // nombre compris entre 0 et 1 déterminant si la bonne réponse sera en première ou en seconde position.
+ 
+            int _reponseCorrectePosition = fonctionBruno.GenererNbrAleatoire(1);
 
-            for (int i = 0; i < _choix.length; i++) {
+            String _ReponseFausse = "";
 
-                System.out.println(_choix[i]);
+            do {
 
+                _ReponseFausse = _choix[fonctionBruno.GenererNbrAleatoire(_choix.length-1)];
+                
+            } while (_ReponseFausse.equals(_reponse));
+
+            if (_reponseCorrectePosition == 0) {
+
+                System.out.println(_reponse);
+
+                System.out.println(_ReponseFausse);
+                
+            } else {
+
+                System.out.println(_ReponseFausse);
+
+                System.out.println(_reponse);
+                
             }
 
                 break;
@@ -232,6 +250,7 @@ public class fonctionDavid {
             case 3:
 
             // cash
+
                 break;
 
             default:
@@ -244,7 +263,7 @@ public class fonctionDavid {
 
         String utilisateurReponse = fonctionBruno.AskString("Veuillez inscrire la bonne réponse.");
 
-        if (utilisateurReponse.equals(_reponse)) {
+        if (utilisateurReponse.toLowerCase().equals(_reponse.toLowerCase())) {
 
             return true;
 
