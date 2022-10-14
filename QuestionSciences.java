@@ -30,7 +30,7 @@ public class QuestionSciences {
 
 	public static String[] PasseReponseSciences() {
 
-		String[] sciencesReponseCorrect = {"206", "32", "femur"};
+		String[] sciencesReponseCorrect = {"206", "32", "fémur"};
 
 		return sciencesReponseCorrect;
 	}

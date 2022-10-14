@@ -16,9 +16,9 @@ public class QuestionGeographie {
 
     public static String[][] PasseChoixGeographie() {
 
-        String[] geoChoix1 = { "Makalu", "Manaslu", "Everest", "Kilimandjaro" };
+        String[] geoChoix1 = { "makalu", "manaslu", "everest", "kilimandjaro" };
 
-        String[] geoChoix2 = { "Paris", "Bruxelles", "Berlin", "Londres" };
+        String[] geoChoix2 = { "paris", "bruxelles", "berlin", "londres" };
 
         String[] geoChoix3 = { "Français", "Italien", "Espagnol", "Portugais"};
 
@@ -30,7 +30,7 @@ public class QuestionGeographie {
 
     public static String[] PasseReponseGeographie(){
 
-        String[] geoReponseCorrect = {"Everest", "Bruxelles", "Espagnol" };
+        String[] geoReponseCorrect = {"everest", "bruxelles", "espagnol" };
 
         return geoReponseCorrect;
 
