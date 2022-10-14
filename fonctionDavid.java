@@ -37,17 +37,17 @@ public class fonctionDavid {
 
         // fonction qui ramène toutes les valeurs du tableau scores à zéro.
 
-        public static int[] ScoreAZero (int[] _scores){
+    public static int[] ScoreAZero (int[] _scores){
 
-            for (int i = 0; i < _scores.length; i++) {
+        for (int i = 0; i < _scores.length; i++) {
 
-                _scores[i] = 0;
-
-            }
-
-            return _scores;
+            _scores[i] = 0;
 
         }
+
+        return _scores;
+
+    }
 
     // fonction qui gère l'intégralité d'une partie. Comprenant tous les tours des joueurs, et les différentes manches.
 
@@ -87,7 +87,7 @@ public class fonctionDavid {
 
                 } else {
 
-                    System.out.println("Désolé, ce n'est pas la bonne réponse, la bonne réponse était : " + _reponseTableau[_idQuestion] + ".");
+                    System.out.println("Désolé, ce n'est pas la bonne réponse, la bonne réponse était : " + _reponseTableau[_idQuestion] + ".\n");
 
                 }
 
@@ -95,7 +95,7 @@ public class fonctionDavid {
 
             _mancheActuelle++;
 
-            System.out.println("\nManche numéro " + _mancheActuelle + " terminée.\n");
+            System.out.println("Manche numéro " + _mancheActuelle + " terminée.\n");
 
         }
 
@@ -305,4 +305,17 @@ public class fonctionDavid {
 
     }
 
+    // fonction qui récapitule les points des joueurs en fin de partie.
+
+    public static void RecapitulatifPoints(String[] _nomJoueur, int[] _scores){
+
+        for (int i = 0; i < _nomJoueur.length; i++) {
+
+            System.out.println("le score de " + _nomJoueur[i] + " est de : " + _scores[i] + "." );
+            
+        }
+
+        System.out.print("\n");
+
+    }
 }

@@ -48,6 +48,8 @@ public class Quiz {
 
             fonctionDavid.UnePartie(nombreDeManche, nombreDeJoueurs, nomJoueurs, scores);
 
+            fonctionDavid.RecapitulatifPoints(nomJoueurs, scores);
+
             // On demande si le ou les joueurs veulent rejouer.
 
         } while (fonctionBruno.QuestionBoleen("voulez-vous rejouer ?"));

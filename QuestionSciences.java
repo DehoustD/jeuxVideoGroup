@@ -21,7 +21,7 @@ public class QuestionSciences {
 
 		String[] sciencesChoix2 = {"20", "28", "32", "35"};
 
-		String[] sciencesChoix3 = {"radius", "fémur", "cubitus", "genoux"};
+		String[] sciencesChoix3 = {"radius", "femur", "cubitus", "genoux"};
 
 		String[][] tableauChoixSciences = {sciencesChoix1, sciencesChoix2, sciencesChoix3};
 
@@ -30,7 +30,7 @@ public class QuestionSciences {
 
 	public static String[] PasseReponseSciences() {
 
-		String[] sciencesReponseCorrect = {"206", "32", "fémur"};
+		String[] sciencesReponseCorrect = {"206", "32", "femur"};
 
 		return sciencesReponseCorrect;
 	}

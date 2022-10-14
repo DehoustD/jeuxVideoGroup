@@ -6,7 +6,7 @@ public class QuestionZoologie {
 
         String zooQuestion2 = "Quelle genre d'arthropodes sont les tiques ?";
 
-        String zooQuestion3 = "Lequel de ces félins ronronne ?";
+        String zooQuestion3 = "Quelle félins est connu pour être le plus rapide en terme de vitesse de course ?";
 
         String zooQuestion4 = "Quelle oiseaux a la réputation d'être le plus dangereux connu au monde ?";
 
@@ -24,7 +24,7 @@ public class QuestionZoologie {
 
         String[] zooChoix2 = { "insecte", "myriapode", "crustacé", "arachnide" };
 
-        String[] zooChoix3 = { "lion", "jaguar", "guépard", "tigre"};
+        String[] zooChoix3 = { "lion", "jaguar", "guepard", "tigre"};
 
         String[] zooChoix4 = { "aigle", "autruche", "émeu", "casoar"};
 
@@ -38,7 +38,7 @@ public class QuestionZoologie {
 
     public static String[] PasseReponseZoologie(){
 
-        String[] zooReponseCorrect = {"ornithorynque", "arachnide", "guépard", "casoar", "dauphin" };
+        String[] zooReponseCorrect = {"ornithorynque", "arachnide", "guepard", "casoar", "dauphin" };
 
         return zooReponseCorrect;
 
