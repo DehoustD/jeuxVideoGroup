@@ -20,30 +20,38 @@ public static int NombreJoueur() {
 
 	System.out.println("Combien aura-t'il de joueurs ? Minimum 1 et maximum 4 joueurs !!");
 
-//	int _number = userInput.nextInt();
-
-	int _number;
+	int _number = 0;
 
 	do {
-		
-		_number = userInput.nextInt();
 
-		if (_number < 1 ) {
+		if (userInput.hasNextInt()){
 
-			System.out.println("Vous devez jouer au moin à 1 joueur !!");
+			_number = userInput.nextInt();
+
+			if (_number < 1 ) {
+	
+				System.out.println("Vous devez jouer au moin à 1 joueur !!");
+			}
+	
+			if (_number > 4) {
+	
+				System.out.println("Le nombre de joueur maximum est de 4");
+			}
+
+		} else {
+
+			System.out.println("Erreur, veuillez répondre par un chiffre.");
+
+			userInput.nextLine();
+
 		}
 
-		if (_number > 4) {
-
-			System.out.println("Le nombre de joueur maximum est de 4");
-		}
-	}
-
-	while (_number < 1 || _number > 4);
+	} while (_number < 1 || _number > 4);
 
 	userInput.nextLine();
 
 	return _number;
+	
 }
 
 
