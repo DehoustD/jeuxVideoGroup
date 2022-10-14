@@ -63,6 +63,8 @@ public class fonctionDavid {
 
                 String _theme = fonctionBruno.ChoiceThematic();
 
+                System.out.println("Votre thème est : " + _theme + ".");
+
                 int _duoCarreCash = fonctionBruno.DuoCarreCash(_theme);
 
                 String[] _questionTableau = RecuperationTableauQuestion(_theme);
@@ -93,7 +95,7 @@ public class fonctionDavid {
 
             _mancheActuelle++;
 
-            System.out.println("manche numéro " + _mancheActuelle + " terminée.\n");
+            System.out.println("\nManche numéro " + _mancheActuelle + " terminée.\n");
 
         }
 
@@ -119,7 +121,7 @@ public class fonctionDavid {
 
                 return QuestionGeographie.PasseQuestionGeographie();
 
-				case "sciences":
+			case "sciences":
 
                 return QuestionSciences.PasseQuestionSciences();
 
@@ -151,7 +153,7 @@ public class fonctionDavid {
 
                 return QuestionGeographie.PasseChoixGeographie();
 
-				case "sciences":
+			case "sciences":
 
                 return QuestionSciences.PasseChoixSciences();
 
@@ -183,7 +185,7 @@ public class fonctionDavid {
 
                 return QuestionGeographie.PasseReponseGeographie();
 
-				case "sciences":
+			case "sciences":
 
                 return QuestionSciences.PasseReponseSciences();
 

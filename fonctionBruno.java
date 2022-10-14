@@ -67,27 +67,33 @@ public static int GenererNbrAleatoire(int _max) {
 		int thematicRandom = GenererNbrAleatoire(3);
 
 		switch (thematicRandom) {
+			
 			case 0:
 
-			System.out.println("zoologie");
+			//System.out.println("zoologie");
+
 				return "zoologie";
 
 				case 1:
 
-			System.out.println("sport");
+			//System.out.println("sport");
+
 				return "sport";
 
 				case 2:
 
-			System.out.println("géographie");
+			//System.out.println("géographie");
+
 				return "géographie";
 
 				case 3:
 
-			System.out.println("sciences");
+			//System.out.println("sciences");
+
 				return "sciences";
 		
 			default:
+
 				return "ERREUR";
 		}
 	}

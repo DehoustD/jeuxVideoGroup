@@ -2,7 +2,7 @@ public class QuestionZoologie {
 
     public static String[] PasseQuestionZoologie() {
 
-        String zooQuestion1 = "Comment s’appelle le mammifère ovipare insolite disposant d'un bec ?";
+        String zooQuestion1 = "Comment s'appelle le mammifère ovipare insolite disposant d'un bec ?";
 
         String zooQuestion2 = "Quelle genre d'arthropodes sont les tiques ?";
 
